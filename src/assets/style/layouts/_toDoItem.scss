@@ -1,0 +1,19 @@
+.toDoItem {
+    width: 100%;
+    padding : 5px;
+    position: relative;
+
+    &__content {
+        text-align: left;
+    }
+
+    &__delete-btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color: $color-secondary;
+        width: 15px;
+        height: 15px;
+        border: none;
+    }
+}

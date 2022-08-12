@@ -12,7 +12,7 @@ export default new Vuex.Store({
             state.toDoList.push(toDo)
         },
         REMOVE_TO_DO(state, index){
-            state.toDoList.filter(p => p.index !== index);
+            state.toDoList.splice(index, 1)
         }
     }
 })
