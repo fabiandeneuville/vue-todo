@@ -23,7 +23,7 @@ export default {
     },
     methods: {
         addToDo(e){
-            if(this.toDo === ''){
+            if(this.toDo === '' || this.toDo.length > 25){
                 e.preventDefault()
                 this.errorMessage = "Please describe your task in a few words ..."
             } else {
