@@ -25,7 +25,7 @@ export default {
         addToDo(e){
             if(this.toDo === ''){
                 e.preventDefault()
-                this.errorMessage = "Veuillez renseigner une tâche."
+                this.errorMessage = "Please describe your task in a few words ..."
             } else {
                 e.preventDefault()
                 this.errorMessage = '';
