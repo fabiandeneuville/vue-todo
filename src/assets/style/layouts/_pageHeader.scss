@@ -1,0 +1,13 @@
+.header {
+    padding: 25px;
+    background-color: $color-primary;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    &__subtitle {
+        text-align: center;
+    }
+}
