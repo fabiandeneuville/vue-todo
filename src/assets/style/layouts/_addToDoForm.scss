@@ -1,0 +1,25 @@
+.addToDoForm {
+    width: 90%;
+    max-width: 600px;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    &__button {
+        width: 30px;
+        height: 30px;
+        background-color: $color-primary;
+        cursor: pointer;
+        border: none;
+        border-radius: 15px;
+        font-size: 20px;
+    }
+
+    &__input {
+        width: calc(100% - 35px);
+        padding: 5px 10px;
+        border: 1px solid $color-primary;
+    }
+}
