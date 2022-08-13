@@ -1,0 +1,11 @@
+.completedItem {
+    width: 100%;
+    padding : 5px;
+    position: relative;
+
+    &__content {
+        font-size: 22px;
+        text-align: left;
+        text-decoration:line-through;
+    }
+}

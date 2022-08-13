@@ -16,7 +16,11 @@ export default {
     props: ['id', 'task'],
     methods: {
         deleteToDo(){
+            console.log(this.task)
+            store.commit('ADD_COMPLETED', this.task)
             store.commit('REMOVE_TO_DO', this.id)
+            console.log(store.state.completedList)
+            console.log(store.state.toDoList)
         }
     }
 }

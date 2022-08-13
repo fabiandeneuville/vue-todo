@@ -1,7 +1,7 @@
 <template>
     
     <ul class="toDoList">
-        <li class="toDoList__item" v-bind:key="index" v-for="(task, index) in getToDoList">
+        <li v-bind:key="index" v-for="(task, index) in getToDoList">
             <toDoItem
             v-bind:id="index"
             v-bind:task="task"

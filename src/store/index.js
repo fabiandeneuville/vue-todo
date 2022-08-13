@@ -5,7 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
-        toDoList: []
+        toDoList: [],
+        completedList: []
     },
     mutations: {
         ADD_TO_DO(state, toDo){
@@ -13,6 +14,9 @@ export default new Vuex.Store({
         },
         REMOVE_TO_DO(state, index){
             state.toDoList.splice(index, 1)
+        },
+        ADD_COMPLETED(state, completed){
+            state.completedList.push(completed)
         }
     }
 })
